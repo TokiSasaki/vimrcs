@@ -23,7 +23,7 @@ set list
 set listchars=tab:▶\ ,eol:↲
 set viminfo+=n~/Work/gvim/viminfo
 set mousemodel=popup_setpos
-"set makeprg=~/Work/Cyg64/bin/make.exe
+set makeprg=~/Work/Cyg64/bin/make.exe
 let $path=$path.';'.$HOME."\\Work\\cmd;"
 let $path=$path.$HOME."\\Work\\cygwin\\bin;"
 let $path=$path.$HOME."\\Work\\gvim;"
@@ -541,10 +541,10 @@ nnoremap	<C-t><C-r>	<C-t>
 
 "ヴィジュアルモードでペーストした時、クリップボードに選択範囲を格納しない。
 "クリップボードを利用できないので注意
-vnoremap	<silent>	<C-p>	<esc>:set paste<cr>gv""c<C-r>+<ESC>:set nopaste<cr>
-vnoremap	<silent>	p		<esc>:set paste<cr>gv""c<C-r>+<ESC>:set nopaste<cr>
-vnoremap	<silent>	P		<esc>:set paste<cr>gv""c<C-r>+<ESC>:set nopaste<cr>
-vnoremap	<silent>	<C-v>	<esc>:set paste<cr>gv""c<C-r>+<ESC>:set nopaste<cr>
+vnoremap	<silent>	<C-p>	"_c<c-r>+<esc>
+vnoremap	<silent>	p		"_c<c-r>+<esc>
+vnoremap	<silent>	P		"_c<c-r>+<esc>
+vnoremap	<silent>	<C-v>	"_c<c-r>+<esc>
 
 " コマンドモード中のペースト
 cnoremap	<C-p>	<C-R>+
