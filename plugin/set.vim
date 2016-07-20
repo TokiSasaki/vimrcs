@@ -1,7 +1,11 @@
 scriptencoding utf-8
 "----------------------------------------------------
 " 基本的な設定
+" 文字コードの設定
+" fileencodingsの設定ではencodingの値を一番最後に記述する
 set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,euc-jp,sjis,cp932,ucs-2le,ucs-2,utf-8
 set nocompatible				" viとの互換性をとらない(vimの独自拡張機能を使う為)
 set backspace=indent,eol,start	" バックスペースキーで削除できるものを指定
 
@@ -64,10 +68,6 @@ set nosmartindent
 set tabstop=4		" タブが対応する空白の数
 set shiftwidth=4	" インデントの各段階に使われる空白の数
 
-" 文字コードの設定
-" fileencodingsの設定ではencodingの値を一番最後に記述する
-set fileencodings=ucs-bom,euc-jp,iso-2022-jp,sjis
-set fileencodings+=,ucs-2le,ucs-2,utf-8
 
 
 " その他
@@ -734,6 +734,7 @@ command! Row40	:set lines=40
 command! RD		:redraw!
 
 command! Utf8		:set fileencoding=utf-8
+command! Utf8Re		:e ++enc=utf-8
 command! Sjis		:set fileencoding=sjis
 command! Euc		:set fileencoding=euc-jp
 command! Iso		:set fileencoding=iso-2022-jp
