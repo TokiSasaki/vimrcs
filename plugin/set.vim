@@ -27,12 +27,12 @@ set list
 set listchars=tab:▶\ ,eol:↲
 set viminfo+=n~/Work/gvim/viminfo
 set mousemodel=popup_setpos
-set shell=C:/Users/tokixy56/Work/cygwin/bin/zsh.exe
-set makeprg=C:/Users/tokixy56/Work/cygwin/bin/make.exe
+set shellslash
+set shell=$HOME/Work/cygwin/bin/zsh.exe
+set makeprg=$HOME/Work/cygwin/bin/make.exe
 let $path=$path.';'.$HOME."\\Work\\cmd;"
 let $path=$path.$HOME."\\Work\\cygwin\\bin;"
 let $path=$path.$HOME."\\Work\\gvim;"
-set shellslash
 set clipboard=unnamed
 set fileformat=unix
 endif
