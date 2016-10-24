@@ -66,6 +66,7 @@ highlight StatusLine   term=NONE cterm=NONE ctermfg=DarkCyan ctermbg=white
 
 set nosmartindent
 set tabstop=4		" タブが対応する空白の数
+set expandtab		" タブをスペース4つに変更
 set shiftwidth=4	" インデントの各段階に使われる空白の数
 
 
