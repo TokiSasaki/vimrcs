@@ -5,7 +5,7 @@ scriptencoding utf-8
 " fileencodingsの設定ではencodingの値を一番最後に記述する
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=ucs-bom,euc-jp,sjis,cp932,utf-8
+set fileencodings=ucs-bom,euc-jp,sjis,cp932,ucs-2le,ucs-2,utf-8
 set nocompatible				" viとの互換性をとらない(vimの独自拡張機能を使う為)
 set backspace=indent,eol,start	" バックスペースキーで削除できるものを指定
 
@@ -27,14 +27,12 @@ set list
 set listchars=tab:▶\ ,eol:↲
 set viminfo+=n~/Work/gvim/viminfo
 set mousemodel=popup_setpos
-set shell=C:/Users/tokixy56/Work/cygwin/bin/zsh.exe
-set makeprg=C:/Users/tokixy56/Work/cygwin/bin/make.exe
+"set makeprg=~/Work/Cyg64/bin/make.exe
 let $path=$path.';'.$HOME."\\Work\\cmd;"
 let $path=$path.$HOME."\\Work\\cygwin\\bin;"
 let $path=$path.$HOME."\\Work\\gvim;"
 set shellslash
 set clipboard=unnamed
-set fileformat=unix
 endif
 
 colorscheme elisex2
