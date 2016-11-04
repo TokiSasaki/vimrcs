@@ -165,6 +165,8 @@ endif
 "au BufEnter vimrc		colorscheme elisex2
 "au BufEnter .vimrc		colorscheme elisex2
 "au BufEnter _vimrc		colorscheme elisex2
+au BufNewFile,BufRead *.css			setf scss
+au BufEnter *.css			setf scss
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
