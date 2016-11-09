@@ -532,6 +532,12 @@ function! GitPushFunc()
 	exec "!git push"
 endfunction
 
+" git pull
+function! GitPullFunc()
+	exec "cd " . g:vimrcspath
+	exec "!git pull"
+endfunction
+
 endif
 
 if has('unix')
@@ -798,6 +804,7 @@ command! PrjCtags	call PrjCtagsFunc()
 command! -range=0 SelectedGrep :call SelectedRangeGrep(<count>,<line1>,<line2>)
 
 command! GitPush	call GitPushFunc()
+command! GitPull	call GitPullFunc()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
