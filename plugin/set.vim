@@ -523,6 +523,25 @@ function! FileFormatFunc()
 	endif
 endfunction
 
+if has('win32')
+" git push
+function! GitPushFunc()
+	exec "cd " . g:vimrcspath
+	exec "!git add ."
+	exec "!git commit -m \"update\""
+	exec "!git push"
+endfunction
+
+endif
+
+if has('unix')
+" git push
+function! GitPushFunc()
+	exec "cd " . g:vimrcspath
+endfunction
+
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " キーマップ関係
@@ -778,6 +797,7 @@ command! PrjCtags	call PrjCtagsFunc()
 "endfunction
 command! -range=0 SelectedGrep :call SelectedRangeGrep(<count>,<line1>,<line2>)
 
+command! GitPush	call GitPushFunc()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
