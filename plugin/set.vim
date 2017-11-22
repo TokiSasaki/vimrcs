@@ -68,7 +68,7 @@ highlight StatusLine   term=NONE cterm=NONE ctermfg=DarkCyan ctermbg=white
 
 set nosmartindent
 set tabstop=4		" タブが対応する空白の数
-set autoindent
+"set autoindent
 set expandtab		" タブをスペース4つに変更
 set shiftwidth=4	" インデントの各段階に使われる空白の数
 
@@ -118,7 +118,7 @@ au BufEnter *			call FileFormatFunc()
 " オートコマンド
 if has("autocmd")
    " ファイルタイプ別インデント、プラグインを有効にする
-   filetype plugin indent on
+   "filetype plugin indent on
    " カーソル位置を記憶する
    autocmd BufReadPost *
        \ if line("'\"") > 0 && line("'\"") <= line("$") |
