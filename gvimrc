@@ -1,8 +1,11 @@
 scriptencoding utf-8
 
+"ファイルのエンコーディング注意
 colorscheme elisex2
 "colorscheme mychela_light
 set gfn=MS_Gothic:h10
+GuiFont! ＭＳ ゴシック:h12
+"GuiFont! Ricty Diminished:h12
 "set gfn=MS_Gothic:h10
 "set gfn=MS_Mincho:h11
 "set gfn=IPAMincho:h12
