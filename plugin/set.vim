@@ -13,6 +13,7 @@ set backspace=indent,eol,start  " バックスペースキーで削除できる�
 if has('macvim')
 set list
 set listchars=tab:▶\ ,eol:⇩
+set listchars+=space:s
 set clipboard=unnamed
 endif
 
@@ -24,7 +25,7 @@ endif
 
 if has('win32')
 set list
-set listchars=tab:▶\ ,eol:↲
+set listchars=tab:▶\ ,eol:↲,space:･
 set viminfo+=n~/Work/gvim/viminfo
 set mousemodel=popup_setpos
 set shellslash
